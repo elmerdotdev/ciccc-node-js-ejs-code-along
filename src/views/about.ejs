@@ -1,0 +1,11 @@
+<%- include('partials/header', { desc: 'This is the coolest about page.' }) %>
+
+    <h1><%= title %></h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis excepturi quis impedit corrupti, neque asperiores culpa, dicta consequatur at pariatur cum alias nisi numquam fugiat porro dolor nam natus eum minus quas, eius incidunt? Sed harum soluta dolorem optio veritatis. Cum ratione praesentium voluptate, eos magni itaque pariatur soluta placeat.</p>
+    <ul>
+      <% hobbies.forEach(hobby => { %>
+        <li><%= hobby %></li>
+      <% }) %>
+    </ul>
+
+<%- include('partials/footer') %>

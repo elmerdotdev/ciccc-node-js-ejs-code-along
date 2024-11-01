@@ -1,0 +1,12 @@
+<%- include('partials/header', { desc: 'To do was added to list.' }) %>
+
+  <h1><%= title %></h1>
+  <ul>
+    <li>ID: <%= newTodo.id %></li>
+    <li>Text: <%= newTodo.todoText %></li>
+    <li>Completed: <%= newTodo.completed ? 'Yes' : 'No' %></li>
+    <li>User: <%= newTodo.user %></li>
+  </ul>
+  <a href="/todos">Go back to list</a>
+
+<%- include('partials/footer') %>

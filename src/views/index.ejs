@@ -1,0 +1,17 @@
+<%- include('partials/header', { desc: "This is the best homepage." }) %>
+
+  <div class="home-wrapper">
+    <section>
+      <h1><%= title %></h1>
+      <p>Welcome to my awesome home page!</p>
+      <ul>
+        <li>The fox</li>
+      </ul>
+      <% if (showInfo) { %>
+        <div>SECRET INFO</div>
+      <% } %>
+    </section>
+    <%- include('partials/sidebar') %>
+  </div>
+
+<%- include('partials/footer') %>
